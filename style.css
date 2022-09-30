@@ -7,8 +7,8 @@ body,
     font-size: 62.5%;
 }
 @font-face {
-    font-family: myFirstFont;
-    src: url(minecraft_font.ttf);
+    font-family: customFont;
+    src: url(minecraft_font.woff);
   }
 body {
     background-position: top;
@@ -17,10 +17,9 @@ body {
     background-image:
     linear-gradient(to bottom left, rgba(255, 255, 255, 0.3), rgba(90, 90, 90, 0.7   )),
     url('background.jpg');
-    background-color: #cccccc;
-    width: 100vw;
-    height: 100vh;
-    font-family: myFirstFont;
+
+    height: 94.8916vh;
+    font-family: customFont;
 }
 
 .back {
@@ -43,7 +42,7 @@ body {
 } */
 .header {
     font-size: 12rem;
-    height: 20vh;
+    height: 19vh;
     background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
     width: 60vw;
     margin: auto;
@@ -51,4 +50,9 @@ body {
     border-radius: 3rem;
     align-content: center;
     text-align: center;
+    box-shadow: -6px 6px rgb(5, 71, 20); 
+    padding-top: 1.5rem;
+}
+.little{
+    font-size: 3rem;
 }
