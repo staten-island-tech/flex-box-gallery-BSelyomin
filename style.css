@@ -1,3 +1,9 @@
+:root {
+    --gradStart: rgb(8, 231, 28);
+    --gradEnd: rgb(11, 148, 43);
+    --bg: linear-gradient(to right, var(--gradstart), var(--gradEnd));
+  }
+
 html,
 body,
 * {
@@ -14,21 +20,13 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     background-image:
     linear-gradient(to bottom left, rgba(255, 255, 255, 0.3), rgba(90, 90, 90, 0.7   )),
     url('background.jpg');
 
     height: 94.8916vh;
     font-family: customFont;
-}
-
-.back {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    opacity: 70%;
-    z-index: -1;
-    text-align: center;
 }
 /* p {
 
@@ -42,8 +40,7 @@ body {
 } */
 .header {
     font-size: 12rem;
-    height: 19vh;
-    background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
+    background-image: linear-gradient(to bottom , rgb(8, 231, 28), rgb(11, 148, 43));
     width: 60vw;
     margin: auto;
     margin-top: 5rem;
@@ -52,7 +49,57 @@ body {
     text-align: center;
     box-shadow: -6px 6px rgb(5, 71, 20); 
     padding-top: 1.5rem;
+    height: fit-content;
+    padding-bottom: 3rem;
 }
 .little{
     font-size: 3rem;
 }
+.parent{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+}
+.child {
+    background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
+    width: 50rem;  
+    text-align: center;
+    padding: 3rem;
+    display: block;
+    border-radius: 3rem;
+    box-shadow: -6px 6px rgb(5, 71, 20); 
+}
+#left {
+    background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
+}
+
+#middle {
+    background-image: linear-gradient(to bottom, rgb(8, 231, 28), rgb(11, 148, 43));
+}
+
+#right {
+    background-image: linear-gradient(to bottom right, rgb(8, 231, 28), rgb(11, 148, 43));
+}
+
+
+.title{
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+.log{
+    width: 30rem;
+    height: 30rem;
+    margin: auto;
+    display:block;
+    margin-bottom: 2rem;
+}
+.description {
+    margin-top: 20rem;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
