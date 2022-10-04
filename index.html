@@ -12,11 +12,11 @@
         <h1 class="big">Minecraft Wood</h1>
         <h2 class="little">All 9 Types of Minecraft Wood</h2>
     </div>
-    <div class="parent">
+    <section class="parent">
         <a href="" class="redirect"></a>
         <div class="child" id="left">
             <p class="title">Oak</p>
-            <img  alt="Minecraft Oak Log Picture" class="log" id="oak">
+            <img  alt="Minecraft Oak Log Picture" src='images/oak.webp' class="log" id="oak" onmouseover="hover(this)" onmouseout="unhover(this)">
             <br>
             <p1 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
                 molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
@@ -87,7 +87,16 @@
                 numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
                 optio, eaque rerum! Provident similique accusantium nemo autem.</p1>
         </div>
-        </div>
+        </section>
     </div>
+    <script>
+        function hover(element) {
+  element.setAttribute('src', 'images/oak_spinning.gif');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'images/oak.webp');
+}
+    </script>
 </body>
 </html>
