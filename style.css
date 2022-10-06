@@ -16,6 +16,13 @@ body,
     font-family: customFont;
     src: url(minecraft_font.woff);
   }
+
+/* @media screen and (max-width: 900px) {
+
+}
+
+@media screen and (max-width:600px)
+} */
 body {
     background-position: top;
     background-repeat: no-repeat;
@@ -73,6 +80,7 @@ body {
     display: block;
     border-radius: 3rem;
     box-shadow: -6px 6px rgb(5, 71, 20); 
+    transition: ease 0.3s;
 }
 #left {
     background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
@@ -84,35 +92,44 @@ body {
 
 #right {
     background-image: linear-gradient(to bottom right, rgb(8, 231, 28), rgb(11, 148, 43));
+    /* linear-gradient(red 0%, orange 25%, yellow 50%, green 75%, blue 100%); */
 
+}
+#left:hover {
+    transform: rotate(2deg) scale(1.1);
+}
+#middle:hover {
+    transform: scale(1.1);
+
+}
+#right:hover {
+    transform: rotate(-2deg) scale(1.1);
 }
 
 
-.title{
+.child-title{
     font-size: 4rem;
     font-weight: 900;
     margin-bottom: 2rem;
 }
-.log{
+.child-log{
     width: 30rem;
     height: 30rem;
     margin: auto;
     display:block;
     margin-bottom: 2rem;
 }
-.description {
+.child-description {
     margin-top: 20rem;
     width: 100%;
     font-size: 1.5rem;
 }
 
 .child:hover {
-    transform: scale(1.1);
-    transition-duration: 0.25s;
 }
 
 #oak {
-    /* transition: transform ease 0.3s; */
+    /* transition: transform ease 0.3s;  */
     overflow: hidden;
     background-position: center;
     background-size: cover;
