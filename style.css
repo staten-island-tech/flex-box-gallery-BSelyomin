@@ -46,6 +46,7 @@ body {
     border-radius: 3rem;
     align-content: center;
     text-align: center;
+    text-align: center;
     box-shadow: -6px 6px rgb(5, 71, 20); 
     padding-top: 1.5rem;
     height: fit-content;
@@ -57,10 +58,11 @@ body {
 .parent{
     margin-top: 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
     row-gap: 5rem;
+    margin-bottom: 10rem;
     
 }
 .child {
@@ -71,7 +73,6 @@ body {
     display: block;
     border-radius: 3rem;
     box-shadow: -6px 6px rgb(5, 71, 20); 
-    margin-left: 10rem;
 }
 #left {
     background-image: linear-gradient(to bottom left, rgb(8, 231, 28), rgb(11, 148, 43));
@@ -83,6 +84,7 @@ body {
 
 #right {
     background-image: linear-gradient(to bottom right, rgb(8, 231, 28), rgb(11, 148, 43));
+
 }
 
 
@@ -114,7 +116,7 @@ body {
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    /* transition: transform ease 0.3s; */
+
 
 }
 
