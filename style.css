@@ -56,7 +56,7 @@ body {
     padding-bottom: 3rem;
 
     animation-duration: 3s;
-    animation-name: bounce;
+    animation-name: expand;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -293,7 +293,7 @@ p {
     }
 } 
 
-@keyframes bounce {
+@keyframes expand {
     0% {
         width:60vw;
         background-color: violet;
@@ -323,7 +323,7 @@ p {
         width: 70%;
         height: 70%;
     }
-    @keyframes bounce {
+    @keyframes expand {
         0% {background-color: violet;}
         16.6% {background-color: aqua;}
         33.3% {background-color: aquamarine;}
