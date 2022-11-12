@@ -1,4 +1,4 @@
-::root {
+:root {
     --gradStart: rgb(8, 231, 28);
     --gradEnd: rgb(11, 148, 43);
     --bg: linear-gradient(to right, var(--gradstart), var(--gradEnd));
